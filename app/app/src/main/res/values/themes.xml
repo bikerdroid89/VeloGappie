@@ -1,0 +1,6 @@
+<resources>
+    <!-- Switching MainActivity to AppCompatActivity (needed for per-app language
+         switching to actually work) requires a Theme.AppCompat-descended theme — Compose
+         draws everything itself, this is purely to satisfy that structural requirement. -->
+    <style name="Theme.VeloGappie" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>

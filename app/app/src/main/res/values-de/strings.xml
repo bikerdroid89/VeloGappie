@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">VeloGappie</string>
+
+    <!-- Gemeinsame Bezeichnungen -->
+    <string name="label_motor_assist">Motorunterstützung</string>
+    <string name="label_cadence">Trittfrequenz</string>
+    <string name="label_lights">Beleuchtung</string>
+    <string name="label_bell">Klingel</string>
+    <string name="label_battery">Akku</string>
+    <string name="label_odometer">Kilometerstand</string>
+    <string name="label_trip">Fahrt</string>
+    <string name="unit_rpm">U/min</string>
+    <string name="bell_default">Standard</string>
+    <string name="bell_ping">Ping</string>
+    <string name="lights_off">Aus</string>
+    <string name="lights_manual_on">Manuell an</string>
+    <string name="lights_auto">Automatisch</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="placeholder_dash">—</string>
+
+    <!-- Berechtigungen -->
+    <string name="permissions_explanation">Bluetooth- und Standortberechtigungen sind nötig, um dein Fahrrad zu finden und damit zu kommunizieren.</string>
+    <string name="permissions_grant">Berechtigungen erteilen</string>
+
+    <!-- Haftungsausschluss -->
+    <string name="disclaimer_text">Diese App ist ein unabhängiges Projekt und nicht mit der Veloretti B.V. verbunden. Sie kommuniziert direkt über Bluetooth mit dem integrierten BLE-Protokoll deines Fahrrads. Obwohl sorgfältig getestet wurde, erfolgt die Nutzung auf eigenes Risiko — der Entwickler kann nicht für unerwartetes Verhalten oder Garantie-Auswirkungen haftbar gemacht werden.</string>
+    <string name="disclaimer_acknowledge">Verstanden</string>
+
+    <!-- Tabs unten -->
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_trip_memory">Fahrtenspeicher</string>
+    <string name="tab_settings">Einstellungen</string>
+    <string name="tab_information">Information</string>
+    <string name="reconnect_banner">Nicht verbunden — zum Verbinden tippen</string>
+
+    <!-- Scan-Bildschirm -->
+    <string name="scan_title">Verbinde dein Fahrrad</string>
+    <string name="scan_helper">Schalte dein Fahrrad ein und stelle sicher, dass Bluetooth auf deinem Handy aktiviert ist.</string>
+    <string name="scan_connect_last_known">Verbinden mit %1$s</string>
+    <string name="scan_connect_button">Verbinden</string>
+    <string name="scan_found_count">GEFUNDEN — %1$d</string>
+    <string name="scan_rescan">Erneut suchen</string>
+    <string name="scan_stop">Scan stoppen</string>
+    <string name="scan_start">Nach Fahrrädern suchen</string>
+    <string name="scan_known_bikes">Bekannte Fahrräder</string>
+    <string name="scan_scanning">Suche läuft…</string>
+    <string name="scan_no_bikes_found">Noch keine Fahrräder gefunden. Fahrräder senden als \"V-&lt;Seriennummer&gt;\".</string>
+    <string name="scan_serial">Seriennummer: %1$s</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_bike_image_description">Veloretti Ivy 2 Pro Matte Black</string>
+    <string name="dashboard_bike_name_mock">Ivy 2 Pro</string>
+    <string name="dashboard_bike_name_default">Veloretti Ivy 2 Pro</string>
+    <string name="dashboard_connected">Verbunden</string>
+    <string name="dashboard_cadence_description">Gewünschte Trittfrequenz, wird auf dem Fahrrad-Display angezeigt.</string>
+    <string name="dashboard_motor_assist_description">0 = kein Motor, 1–4 = steigende Unterstützung, S = maximale Leistung.</string>
+    <string name="dashboard_start_multiplier_description">Extra Schub beim Anfahren aus dem Stillstand.</string>
+    <string name="dashboard_start_multiplier_title">Startmultiplikator</string>
+    <string name="dashboard_enviolo_mode_title">Nabenmodus</string>
+
+    <string name="bike_display_title">Fahrraddisplay</string>
+    <string name="display_mode_clock">Uhr</string>
+    <string name="display_mode_clock_split">Uhr (gross)</string>
+    <string name="display_mode_heart_rate">Herzfrequenz</string>
+    <string name="display_mode_clock_hr">Uhr + Herzfrequenz</string>
+    <string name="display_mode_weather">Wetter</string>
+
+    <!-- Enviolo-Nabenmodi -->
+    <string name="enviolo_mode_economy">Eco</string>
+    <string name="enviolo_mode_comfort">Komfort</string>
+    <string name="enviolo_mode_sport">Sport</string>
+
+    <!-- Einstellungen -->
+    <string name="settings_appearance_title">Erscheinungsbild</string>
+    <string name="settings_theme_light">Hell</string>
+    <string name="settings_theme_dark">Dunkel</string>
+    <string name="settings_accent_coral">Coral</string>
+    <string name="settings_accent_sage">Sage</string>
+    <string name="settings_accent_ruby">Ruby</string>
+    <string name="settings_accent_dune">Dune</string>
+    <string name="settings_clear_ride_history">Fahrtenspeicher löschen</string>
+    <string name="settings_clear_history_confirm_title">Fahrtenspeicher löschen?</string>
+    <string name="settings_clear_history_confirm_text">Dies löscht dauerhaft alle lokal gespeicherten Fahrten. Das kann nicht rückgängig gemacht werden.</string>
+    <string name="settings_clear_history_confirm_button">Löschen</string>
+
+
+    <!-- Information -->
+    <string name="info_health_connect_activate">Google Health-Synchronisierung aktivieren</string>
+    <string name="info_health_connect_active">Google Health-Synchronisierung aktiv</string>
+    <string name="info_drive_sync_activate">Einstellungen/Fahrtenspeicher mit Google Drive synchronisieren</string>
+    <string name="info_drive_sync_toggle">Google Drive-Synchronisierung aktiv</string>
+    <string name="info_drive_sync_revoke_hint">Das Ausschalten stoppt nur neue Backups — um den Zugriff vollständig zu widerrufen, entferne die App bei den verbundenen Apps deines Google-Kontos.</string>
+    <string name="info_autostart_title">Autostart</string>
+    <string name="info_autostart_bike_detected">App öffnen, sobald dein Fahrrad in Reichweite kommt</string>
+    <string name="info_autostart_watch_pedal">Uhr-App öffnen, sobald du zu treten beginnst</string>
+    <string name="info_language_title">Sprache</string>
+    <string name="info_language_system">Automatisch</string>
+    <string name="info_connected">Verbunden: %1$s</string>
+    <string name="info_heart_rate">Herzfrequenz (Uhr)</string>
+    <string name="info_battery">Akku</string>
+    <string name="info_battery_health">Akkuzustand</string>
+    <string name="info_charging">Lädt</string>
+    <string name="info_speed">Geschwindigkeit</string>
+    <string name="info_max_speed_session">Höchstgeschwindigkeit (Sitzung)</string>
+    <string name="info_odometer">Kilometerstand</string>
+    <string name="info_cadence">Trittfrequenz</string>
+    <string name="info_display_serial">Seriennummer Display</string>
+    <string name="info_display_hardware">Hardwareversion Display</string>
+    <string name="info_display_firmware">Firmwareversion Display</string>
+    <string name="info_experience_module_firmware">Firmwareversion Experience-Modul</string>
+    <string name="info_section_live">Live</string>
+    <string name="info_section_display">Display</string>
+    <string name="info_enviolo_title">Enviolo-Nabe</string>
+    <string name="info_enviolo_serial">Seriennummer</string>
+    <string name="info_enviolo_article">Artikelnummer</string>
+    <string name="info_enviolo_start_multiplier">Startmultiplikator</string>
+    <string name="info_enviolo_mode">Modus</string>
+    <string name="info_enviolo_operation_mode">Betriebsmodus</string>
+    <string name="info_enviolo_cadence_range">Trittfrequenzbereich</string>
+    <string name="info_enviolo_odometer">Naben-Kilometerstand</string>
+    <string name="update_version">Version %1$s verfügbar</string>
+    <string name="update_download">Herunterladen &amp; installieren</string>
+    <string name="update_downloading">Wird heruntergeladen… %1$d%%</string>
+    <string name="update_skip">Diese Version überspringen</string>
+    <string name="update_disable">Nicht mehr nach Updates suchen</string>
+    <string name="update_error">Download fehlgeschlagen — erneut versuchen</string>
+    <string name="info_version">Version %1$s</string>
+    <string name="info_disconnect">Verbindung trennen</string>
+
+    <!-- Fahrradfoto-Auswahl -->
+    <string name="photo_picker_choose_model">Wähle dein Fahrradmodell</string>
+    <string name="photo_picker_choose_color">Tippe auf eine Farbe, um Fotos zu suchen</string>
+    <string name="photo_picker_search">Suchen</string>
+    <string name="photo_picker_from_gallery">Foto aus Galerie wählen</string>
+    <string name="photo_crop_cancel">Abbrechen</string>
+    <string name="photo_crop_save">Speichern</string>
+    <string name="photo_picker_tap_to_change">Tippen, um Fahrradfoto festzulegen</string>
+
+    <!-- Fahrtenspeicher (Fahrtverlauf) -->
+    <string name="trip_memory_empty">Noch keine Fahrten — fang an zu treten, dann erscheint hier eine.</string>
+    <string name="trip_memory_distance">Entfernung</string>
+    <string name="trip_memory_duration">Dauer</string>
+    <string name="trip_memory_avg_speed">Ø Geschwindigkeit</string>
+    <string name="trip_memory_max_speed">Höchstgeschwindigkeit</string>
+    <string name="trip_memory_avg_heart_rate">Ø Herzfrequenz</string>
+    <string name="trip_memory_max_heart_rate">Max. Herzfrequenz</string>
+    <string name="trip_memory_elevation_gain">Höhenmeter</string>
+    <string name="trip_memory_battery">Akku</string>
+    <string name="trip_memory_avg_cadence">Ø Trittfrequenz</string>
+    <string name="trip_memory_max_cadence">Max. Trittfrequenz</string>
+    <string name="trip_memory_merge_rides">Fahrten zusammenführen</string>
+    <string name="trip_memory_select_to_merge">Fahrten zum Zusammenführen auswählen</string>
+    <string name="trip_memory_merge_confirm_title">%1$d Fahrten zusammenführen?</string>
+    <string name="trip_memory_merge_confirm_text">Dies kombiniert die ausgewählten Fahrten zu einer. Das kann nicht rückgängig gemacht werden.</string>
+    <string name="trip_memory_delete_ride">Fahrt löschen</string>
+    <string name="trip_memory_delete_confirm_title">Diese Fahrt löschen?</string>
+    <string name="trip_memory_delete_confirm_text">Dies löscht diese Fahrt dauerhaft. Das kann nicht rückgängig gemacht werden.</string>
+    <string name="settings_nav_bridge_title">Navigationsbrücke</string>
+    <string name="settings_nav_bridge_description">Leitet Abbiegehinweise von Google Maps, Komoot, Waze, OsmAnd, Ride with GPS, Bikemap oder Mapy.cz an das Fahrraddisplay weiter. Erfordert Benachrichtigungszugriff.</string>
+    <string name="settings_nav_bridge_grant_access">Benachrichtigungszugriff erteilen</string>
+    <string name="settings_nav_bridge_active">Navigationsbrücke</string>
+    <string name="nav_card_active">Navigation aktiv</string>
+    <string name="trip_memory_groups">Gruppen</string>
+    <string name="trip_memory_create_group">Gruppe erstellen</string>
+    <string name="trip_memory_group_name_hint">Gruppenname</string>
+    <string name="trip_memory_add_to_group">Zur Gruppe hinzufügen</string>
+    <string name="trip_memory_remove_from_group">Aus Gruppe entfernen</string>
+    <string name="trip_memory_delete_group">Gruppe löschen</string>
+    <string name="trip_memory_rename_group">Gruppe umbenennen</string>
+    <string name="trip_memory_delete_group_confirm_title">Diese Gruppe löschen?</string>
+    <string name="trip_memory_delete_group_confirm_text">Die Fahrten in dieser Gruppe bleiben erhalten, nur die Gruppierung wird entfernt.</string>
+    <string name="trip_memory_view_in_health">In Health Connect ansehen</string>
+    <string name="trip_memory_ungrouped">Einzelne Fahrten</string>
+    <string name="trip_memory_all_rides">Alle Fahrten</string>
+    <string name="trip_memory_export_gpx">GPX exportieren</string>
+    <string name="widget_description">Akku und Geschwindigkeit auf einen Blick</string>
+    <string name="widget_tap_to_open">Tippen zum Öffnen</string>
+    <string name="widget_no_bike">Kein Fahrrad verbunden</string>
+    <string name="stats_total_distance">Gesamtstrecke</string>
+    <string name="stats_week">Woche</string>
+    <string name="stats_month">Monat</string>
+    <string name="stats_year">Jahr</string>
+    <string name="stats_all">Alle</string>
+    <string name="notif_connection_channel">Fahrradverbindung</string>
+    <string name="notif_scanning">Suche nach Fahrrädern…</string>
+    <string name="notif_connecting">Verbinden…</string>
+    <string name="notif_reconnecting">Erneut verbinden…</string>
+    <string name="notif_connected">Verbunden</string>
+    <string name="notif_riding">Unterwegs · %1$s km</string>
+    <string name="notif_battery_low_title">Akku fast leer</string>
+    <string name="notif_battery_low_text">Akku bei %1$d%%</string>
+    <string name="settings_speed_alert_title">Geschwindigkeitswarnung</string>
+    <string name="settings_speed_alert_description">Vibriert, wenn du die eingestellte Geschwindigkeit überschreitest.</string>
+    <string name="settings_speed_alert_toggle">Geschwindigkeitswarnung</string>
+    <string name="settings_battery_alert_title">Akkuwarnung</string>
+    <string name="settings_battery_alert_description">Benachrichtigung, wenn der Akku unter das eingestellte Niveau fällt.</string>
+    <string name="settings_battery_alert_toggle">Akkuwarnung</string>
+    <string name="settings_service_reminder_title">Serviceerinnerung</string>
+    <string name="settings_service_reminder_description">Erinnerung basierend auf dem Kilometerstand.</string>
+    <string name="settings_service_reminder_next">Nächster Service in %1$d km</string>
+    <string name="battery_efficiency_title">Akkueffizienz</string>
+    <string name="battery_efficiency_unit">%/km</string>
+    <string name="battery_efficiency_avg">Avg. %.1f%%/km</string>
+    <string name="battery_efficiency_recent">Letzte %.1f%%/km</string>
+    <string name="battery_efficiency_hint">Niedriger ist besser</string>
+    <string name="battery_efficiency_source">Basierend auf Akkumesswerten des Fahrrads</string>
+    <string name="settings_service_reminder_reset">Service erledigt</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Willkommen bei\nVeloGappie</string>
+    <string name="onboarding_welcome_body">Dein Companion für das Veloretti E-Bike. Steuere Motorunterstützung, Licht und Display — direkt von deinem Handy.</string>
+    <string name="onboarding_connect_title">Verbinde über\nBluetooth</string>
+    <string name="onboarding_connect_body">VeloGappie braucht Bluetooth- und Standortzugriff, um dein Fahrrad zu finden und zu steuern. Wir teilen nichts mit Dritten.</string>
+    <string name="onboarding_connect_check_1">Mit dem Fahrrad verbinden</string>
+    <string name="onboarding_connect_check_2">Fahrten mit GPS aufzeichnen</string>
+    <string name="onboarding_scan_title">Finde dein\nFahrrad</string>
+    <string name="onboarding_scan_body">Schalte dein Fahrrad ein, dann finden wir es per Bluetooth.</string>
+    <string name="onboarding_scan_connected">Verbunden!</string>
+    <string name="onboarding_customize_title">Mach es\nzu deinem</string>
+    <string name="onboarding_customize_body">Richte optionale Funktionen ein, oder überspringe und passe später in den Einstellungen an.</string>
+    <string name="onboarding_feature_autostart">Öffnen wenn Fahrrad in der Nähe</string>
+    <string name="onboarding_feature_nav">Navigationsbrücke</string>
+    <string name="onboarding_feature_battery">Akkuwarnung</string>
+    <string name="onboarding_feature_health">Google Health Synchronisierung</string>
+    <string name="onboarding_feature_drive">Google Drive Backup</string>
+    <string name="onboarding_btn_start">Los geht\'s</string>
+    <string name="onboarding_btn_grant">Zugriff gewähren</string>
+    <string name="onboarding_btn_skip">Überspringen</string>
+    <string name="onboarding_btn_finish">Fertig — auf geht\'s</string>
+    <string name="onboarding_next">Weiter</string>
+
+    <!-- Error feedback -->
+    <string name="error_drive_sync">Google Drive Synchronisierung fehlgeschlagen — versuche es später erneut</string>
+    <string name="error_weather">Wetterdaten konnten nicht abgerufen werden</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_assist_level">Unterstützungsstufe %1$s</string>
+    <string name="a11y_close">Schließen</string>
+    <string name="a11y_merge">Zusammenführen</string>
+    <string name="a11y_more_options">Weitere Optionen</string>
+    <string name="a11y_delete">Löschen</string>
+    <string name="a11y_share">Teilen</string>
+    <string name="a11y_add">Hinzufügen</string>
+    <string name="a11y_folder">Ordner</string>
+    <string name="a11y_back">Zurück</string>
+    <string name="a11y_gallery">Galerie</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      VeloGappie talks to your bike over Bluetooth only, and NEVER to Veloretti's cloud,
+      Comodule's cloud, or any other manufacturer/third-party endpoint — there is no code
+      path in this app that can reach them. The only network traffic this app can ever make
+      is the optional, explicitly user-opted-in Google Drive backup, which goes straight to
+      the user's own Drive over Google's API. Bike control itself remains fully local-only.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+
+    <!-- Only requested for the optional "automatic lights at sunset" feature; computed locally, never uploaded anywhere. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Re-arms the background bike-proximity scan after a reboot (see BikeProximityScanner). -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Ride history: write a cycling exercise session to Health Connect on-device (Binder IPC to the
+         Health Connect provider app, not a network call — same local-only constraint as the rest of this app). -->
+    <uses-permission android:name="android.permission.health.WRITE_EXERCISE" />
+    <uses-permission android:name="android.permission.health.WRITE_DISTANCE" />
+    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.VeloGappie"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.VeloGappie">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Health Connect permission rationale, Android <=13 -->
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Health Connect permission rationale, Android 14+. Without this alias the
+             permission request dialog fails silently. -->
+        <activity-alias
+            android:name="ViewPermissionUsageActivity"
+            android:exported="true"
+            android:targetActivity=".MainActivity"
+            android:permission="android.permission.START_VIEW_PERMISSION_USAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+            </intent-filter>
+        </activity-alias>
+
+        <!--
+          Receives crown-rotation cadence commands + heart rate from the paired Wear OS
+          companion app, over the Wearable Data Layer API (local Bluetooth/Wi-Fi Direct
+          to the watch only — not a network service, no cloud involved).
+        -->
+        <service
+            android:name=".wear.PhoneWearListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+                <data android:scheme="wear" android:host="*" android:path="/watch_levels" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+                <data android:scheme="wear" android:host="*" android:path="/watch_event" />
+            </intent-filter>
+        </service>
+
+        <!--
+          NotificationListenerService that reads ongoing navigation notifications from
+          Google Maps, Komoot, or Waze and forwards turn-by-turn directions to the bike's
+          display over BLE. Requires the user to grant "notification access" in system
+          settings; the app prompts for this when the feature is enabled in Settings.
+          Only reads ongoing (navigation) notifications from the three known nav-app
+          packages — all other notifications are ignored in onNotificationPosted.
+        -->
+        <service
+            android:name=".nav.NavBridgeService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- PendingIntent target for BikeProximityScanner's background BLE scan; only ever
+             invoked by our own PendingIntent, never by another app. -->
+        <receiver android:name=".ble.BikeDetectedReceiver" android:exported="false" />
+
+        <service
+            android:name=".ble.ConnectionService"
+            android:exported="false"
+            android:foregroundServiceType="connectedDevice" />
+
+
+        <receiver
+            android:name=".widget.BikeWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bike_info" />
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Re-arms the proximity scan after a reboot (registrations don't survive one). -->
+        <receiver android:name=".ble.BootCompletedReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">VeloGappie</string>
+
+    <!-- Shared labels -->
+    <string name="label_motor_assist">Motor assist</string>
+    <string name="label_cadence">Cadence</string>
+    <string name="label_lights">Lights</string>
+    <string name="label_bell">Bell</string>
+    <string name="label_battery">Battery</string>
+    <string name="label_odometer">Odometer</string>
+    <string name="label_trip">Trip</string>
+    <string name="unit_rpm">rpm</string>
+    <string name="bell_default">Default</string>
+    <string name="bell_ping">Ping</string>
+    <string name="lights_off">Off</string>
+    <string name="lights_manual_on">Manual on</string>
+    <string name="lights_auto">Auto</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="placeholder_dash">—</string>
+
+    <!-- Permissions -->
+    <string name="permissions_explanation">Bluetooth and location permissions are needed to find and talk to your bike.</string>
+    <string name="permissions_grant">Grant permissions</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_text">This app is an independent project and not affiliated with Veloretti B.V. It communicates with your bike directly over Bluetooth using the bike\'s native BLE protocol. While every care has been taken, use is at your own risk — the developer cannot be held liable for any unexpected behavior or warranty implications.</string>
+    <string name="disclaimer_acknowledge">I understand</string>
+
+    <!-- Bottom nav tabs -->
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_trip_memory">Trip memory</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_information">Information</string>
+    <string name="reconnect_banner">Not connected — tap to connect</string>
+
+    <!-- Scan screen -->
+    <string name="scan_title">Connect your bike</string>
+    <string name="scan_helper">Turn on your bike and make sure Bluetooth is enabled on your phone.</string>
+    <string name="scan_connect_last_known">Connect to %1$s</string>
+    <string name="scan_connect_button">Connect</string>
+    <string name="scan_found_count">FOUND — %1$d</string>
+    <string name="scan_rescan">Scan again</string>
+    <string name="scan_stop">Stop scan</string>
+    <string name="scan_start">Scan for bikes</string>
+    <string name="scan_known_bikes">Known bikes</string>
+    <string name="scan_scanning">Scanning…</string>
+    <string name="scan_no_bikes_found">No bikes found yet. Bikes advertise as \"V-&lt;serial&gt;\".</string>
+    <string name="scan_serial">Serial: %1$s</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_bike_image_description">Veloretti Ivy 2 Pro Matte Black</string>
+    <string name="dashboard_bike_name_mock">Ivy 2 Pro</string>
+    <string name="dashboard_bike_name_default">Veloretti Ivy 2 Pro</string>
+    <string name="dashboard_connected">Connected</string>
+    <string name="dashboard_cadence_description">Target pedaling speed sent to the bike\'s display.</string>
+    <string name="dashboard_motor_assist_description">0 = no motor, 1–4 = increasing assist, S = maximum power.</string>
+    <string name="dashboard_start_multiplier_description">Extra boost when pulling away from standstill.</string>
+    <string name="dashboard_start_multiplier_title">Start multiplier</string>
+    <string name="dashboard_enviolo_mode_title">Hub mode</string>
+
+    <string name="bike_display_title">Bike display</string>
+    <string name="display_mode_clock">Clock</string>
+    <string name="display_mode_clock_split">Clock (large)</string>
+    <string name="display_mode_heart_rate">Heart rate</string>
+    <string name="display_mode_clock_hr">Clock + heart rate</string>
+    <string name="display_mode_weather">Weather</string>
+
+    <!-- Enviolo hub modes -->
+    <string name="enviolo_mode_economy">Eco</string>
+    <string name="enviolo_mode_comfort">Comfort</string>
+    <string name="enviolo_mode_sport">Sport</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_accent_coral">Coral</string>
+    <string name="settings_accent_sage">Sage</string>
+    <string name="settings_accent_ruby">Ruby</string>
+    <string name="settings_accent_dune">Dune</string>
+    <string name="settings_clear_ride_history">Clear ride history</string>
+    <string name="settings_clear_history_confirm_title">Clear ride history?</string>
+    <string name="settings_clear_history_confirm_text">This permanently deletes all locally stored rides. This can\'t be undone.</string>
+    <string name="settings_clear_history_confirm_button">Clear</string>
+
+
+    <!-- Information -->
+    <string name="info_health_connect_activate">Activate Google Health sync</string>
+    <string name="info_health_connect_active">Google Health sync active</string>
+    <string name="info_drive_sync_activate">Sync settings/trip-history to Google Drive</string>
+    <string name="info_drive_sync_toggle">Google Drive sync active</string>
+    <string name="info_drive_sync_revoke_hint">Turning this off only stops new backups — to fully revoke this app\'s access, remove it from your Google Account\'s connected apps.</string>
+    <string name="info_autostart_title">Autostart</string>
+    <string name="info_autostart_bike_detected">Open the app when your bike comes into range</string>
+    <string name="info_autostart_watch_pedal">Open the watch app when you start pedaling</string>
+    <string name="info_language_title">Language</string>
+    <string name="info_language_system">Automatic</string>
+    <string name="info_connected">Connected: %1$s</string>
+    <string name="info_heart_rate">Heart rate (watch)</string>
+    <string name="info_battery">Battery</string>
+    <string name="info_battery_health">Battery health</string>
+    <string name="info_charging">Charging</string>
+    <string name="info_speed">Speed</string>
+    <string name="info_max_speed_session">Max speed (session)</string>
+    <string name="info_odometer">Odometer</string>
+    <string name="info_cadence">Cadence</string>
+    <string name="info_display_serial">Display serial</string>
+    <string name="info_display_hardware">Display hardware</string>
+    <string name="info_display_firmware">Display firmware</string>
+    <string name="info_experience_module_firmware">Experience module firmware</string>
+    <string name="info_section_live">Live</string>
+    <string name="info_section_display">Display</string>
+    <string name="info_enviolo_title">Enviolo hub</string>
+    <string name="info_enviolo_serial">Serial number</string>
+    <string name="info_enviolo_article">Article number</string>
+    <string name="info_enviolo_start_multiplier">Start multiplier</string>
+    <string name="info_enviolo_mode">Mode</string>
+    <string name="info_enviolo_operation_mode">Operation mode</string>
+    <string name="info_enviolo_cadence_range">Cadence range</string>
+    <string name="info_enviolo_odometer">Hub odometer</string>
+    <string name="update_version">Version %1$s available</string>
+    <string name="update_download">Download &amp; install</string>
+    <string name="update_downloading">Downloading… %1$d%%</string>
+    <string name="update_skip">Skip this version</string>
+    <string name="update_disable">Don\'t check for updates</string>
+    <string name="update_error">Download failed — try again</string>
+    <string name="info_version">Version %1$s</string>
+    <string name="info_disconnect">Disconnect</string>
+
+    <!-- Bike photo picker -->
+    <string name="photo_picker_choose_model">Choose your bike model</string>
+    <string name="photo_picker_choose_color">Tap a color to search for photos</string>
+    <string name="photo_picker_search">Search</string>
+    <string name="photo_picker_from_gallery">Choose photo from gallery</string>
+    <string name="photo_crop_cancel">Cancel</string>
+    <string name="photo_crop_save">Save</string>
+    <string name="photo_picker_tap_to_change">Tap to set bike photo</string>
+
+    <!-- Trip memory (ride history) -->
+    <string name="trip_memory_empty">No rides yet — start pedaling and one will show up here.</string>
+    <string name="trip_memory_distance">Distance</string>
+    <string name="trip_memory_duration">Duration</string>
+    <string name="trip_memory_avg_speed">Avg speed</string>
+    <string name="trip_memory_max_speed">Max speed</string>
+    <string name="trip_memory_avg_heart_rate">Avg heart rate</string>
+    <string name="trip_memory_max_heart_rate">Max heart rate</string>
+    <string name="trip_memory_elevation_gain">Elevation gain</string>
+    <string name="trip_memory_battery">Battery</string>
+    <string name="trip_memory_avg_cadence">Avg cadence</string>
+    <string name="trip_memory_max_cadence">Max cadence</string>
+    <string name="trip_memory_merge_rides">Merge rides</string>
+    <string name="trip_memory_select_to_merge">Select rides to merge</string>
+    <string name="trip_memory_merge_confirm_title">Merge %1$d rides?</string>
+    <string name="trip_memory_merge_confirm_text">This combines the selected rides into one. This can\'t be undone.</string>
+    <string name="trip_memory_delete_ride">Delete ride</string>
+    <string name="trip_memory_delete_confirm_title">Delete this ride?</string>
+    <string name="trip_memory_delete_confirm_text">This permanently deletes this ride. This can\'t be undone.</string>
+    <string name="settings_nav_bridge_title">Navigation bridge</string>
+    <string name="settings_nav_bridge_description">Forwards turn-by-turn directions from Google Maps, Komoot, Waze, OsmAnd, Ride with GPS, Bikemap, or Mapy.cz to the bike\'s display. Requires notification access.</string>
+    <string name="settings_nav_bridge_grant_access">Grant notification access</string>
+    <string name="settings_nav_bridge_active">Navigation bridge</string>
+    <string name="nav_card_active">Navigation active</string>
+    <string name="trip_memory_groups">Groups</string>
+    <string name="trip_memory_create_group">Create group</string>
+    <string name="trip_memory_group_name_hint">Group name</string>
+    <string name="trip_memory_add_to_group">Add to group</string>
+    <string name="trip_memory_remove_from_group">Remove from group</string>
+    <string name="trip_memory_delete_group">Delete group</string>
+    <string name="trip_memory_rename_group">Rename group</string>
+    <string name="trip_memory_delete_group_confirm_title">Delete this group?</string>
+    <string name="trip_memory_delete_group_confirm_text">The rides in this group will be kept, only the grouping is removed.</string>
+    <string name="trip_memory_view_in_health">View in Health Connect</string>
+    <string name="trip_memory_ungrouped">Ungrouped rides</string>
+    <string name="trip_memory_all_rides">All rides</string>
+    <string name="trip_memory_export_gpx">Export GPX</string>
+    <string name="widget_description">Battery and speed at a glance</string>
+    <string name="widget_tap_to_open">Tap to open</string>
+    <string name="widget_no_bike">No bike connected</string>
+    <string name="stats_total_distance">Total distance</string>
+    <string name="stats_week">Week</string>
+    <string name="stats_month">Month</string>
+    <string name="stats_year">Year</string>
+    <string name="stats_all">All</string>
+    <string name="notif_connection_channel">Bike connection</string>
+    <string name="notif_scanning">Scanning for bikes…</string>
+    <string name="notif_connecting">Connecting…</string>
+    <string name="notif_reconnecting">Reconnecting…</string>
+    <string name="notif_connected">Connected</string>
+    <string name="notif_riding">Riding · %1$s km</string>
+    <string name="notif_battery_low_title">Battery low</string>
+    <string name="notif_battery_low_text">Battery at %1$d%%</string>
+    <string name="settings_speed_alert_title">Speed alert</string>
+    <string name="settings_speed_alert_description">Vibrates when you exceed the set speed.</string>
+    <string name="settings_speed_alert_toggle">Speed alert</string>
+    <string name="settings_battery_alert_title">Battery alert</string>
+    <string name="settings_battery_alert_description">Notifies you when the battery drops below the set level.</string>
+    <string name="settings_battery_alert_toggle">Battery alert</string>
+    <string name="settings_service_reminder_title">Service reminder</string>
+    <string name="settings_service_reminder_description">Get a reminder based on your odometer reading.</string>
+    <string name="settings_service_reminder_next">Next service in %1$d km</string>
+    <string name="battery_efficiency_title">Battery efficiency</string>
+    <string name="battery_efficiency_unit">%/km</string>
+    <string name="battery_efficiency_avg">Avg %.1f%%/km</string>
+    <string name="battery_efficiency_recent">Recent %.1f%%/km</string>
+    <string name="battery_efficiency_hint">Lower is better</string>
+    <string name="battery_efficiency_source">Based on battery readings from the bike</string>
+    <string name="settings_service_reminder_reset">Service done</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome to\nVeloGappie</string>
+    <string name="onboarding_welcome_body">Your companion for the Veloretti e-bike. Control motor assist, lights and your display — straight from your phone.</string>
+    <string name="onboarding_connect_title">Connect via\nBluetooth</string>
+    <string name="onboarding_connect_body">VeloGappie needs Bluetooth and location access to find and control your bike. We don\'t share anything with third parties.</string>
+    <string name="onboarding_connect_check_1">Connect to the bike</string>
+    <string name="onboarding_connect_check_2">Record rides with GPS</string>
+    <string name="onboarding_scan_title">Find your\nbike</string>
+    <string name="onboarding_scan_body">Turn on your bike and we\'ll find it via Bluetooth.</string>
+    <string name="onboarding_scan_connected">Connected!</string>
+    <string name="onboarding_customize_title">Make it\nyours</string>
+    <string name="onboarding_customize_body">Set up optional features now, or skip and configure later in Settings.</string>
+    <string name="onboarding_feature_autostart">Open when bike is nearby</string>
+    <string name="onboarding_feature_nav">Navigation bridge</string>
+    <string name="onboarding_feature_battery">Battery warning</string>
+    <string name="onboarding_feature_health">Google Health sync</string>
+    <string name="onboarding_feature_drive">Google Drive backup</string>
+    <string name="onboarding_btn_start">Get started</string>
+    <string name="onboarding_btn_grant">Grant access</string>
+    <string name="onboarding_btn_skip">Skip</string>
+    <string name="onboarding_btn_finish">Done — let\'s ride</string>
+    <string name="onboarding_next">Next</string>
+
+    <!-- Error feedback -->
+    <string name="error_drive_sync">Google Drive sync failed — try again later</string>
+    <string name="error_weather">Could not fetch weather data</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_assist_level">Assist level %1$s</string>
+    <string name="a11y_close">Close</string>
+    <string name="a11y_merge">Merge</string>
+    <string name="a11y_more_options">More options</string>
+    <string name="a11y_delete">Delete</string>
+    <string name="a11y_share">Share</string>
+    <string name="a11y_add">Add</string>
+    <string name="a11y_folder">Folder</string>
+    <string name="a11y_back">Back</string>
+    <string name="a11y_gallery">Gallery</string>
+</resources>

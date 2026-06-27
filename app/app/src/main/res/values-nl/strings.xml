@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">VeloGappie</string>
+
+    <!-- Gedeelde labels -->
+    <string name="label_motor_assist">Trapondersteuning</string>
+    <string name="label_cadence">Cadans</string>
+    <string name="label_lights">Verlichting</string>
+    <string name="label_bell">Bel</string>
+    <string name="label_battery">Accu</string>
+    <string name="label_odometer">Kilometerstand</string>
+    <string name="label_trip">Rit</string>
+    <string name="unit_rpm">tpm</string>
+    <string name="bell_default">Standaard</string>
+    <string name="bell_ping">Ping</string>
+    <string name="lights_off">Uit</string>
+    <string name="lights_manual_on">Handmatig aan</string>
+    <string name="lights_auto">Automatisch</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="placeholder_dash">—</string>
+
+    <!-- Machtigingen -->
+    <string name="permissions_explanation">Bluetooth- en locatiemachtigingen zijn nodig om je fiets te vinden en ermee te communiceren.</string>
+    <string name="permissions_grant">Machtigingen geven</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_text">Deze app is een onafhankelijk project en niet gelieerd aan Veloretti B.V. De app communiceert rechtstreeks met je fiets via Bluetooth met het ingebouwde BLE-protocol. Hoewel er zorgvuldig is getest, is het gebruik op eigen risico — de ontwikkelaar kan niet aansprakelijk worden gesteld voor onverwacht gedrag of garantie-implicaties.</string>
+    <string name="disclaimer_acknowledge">Ik begrijp het</string>
+
+    <!-- Tabbladen onderin -->
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_trip_memory">Rithistorie</string>
+    <string name="tab_settings">Instellingen</string>
+    <string name="tab_information">Informatie</string>
+    <string name="reconnect_banner">Niet verbonden — tik om te verbinden</string>
+
+    <!-- Scanscherm -->
+    <string name="scan_title">Verbind je fiets</string>
+    <string name="scan_helper">Zet je fiets aan en zorg dat Bluetooth ingeschakeld is op je telefoon.</string>
+    <string name="scan_connect_last_known">Verbinden met %1$s</string>
+    <string name="scan_connect_button">Verbinden</string>
+    <string name="scan_found_count">GEVONDEN — %1$d</string>
+    <string name="scan_rescan">Opnieuw zoeken</string>
+    <string name="scan_stop">Scan stoppen</string>
+    <string name="scan_start">Scannen naar fietsen</string>
+    <string name="scan_known_bikes">Bekende fietsen</string>
+    <string name="scan_scanning">Scannen…</string>
+    <string name="scan_no_bikes_found">Nog geen fietsen gevonden. Fietsen adverteren als \"V-&lt;serienummer&gt;\".</string>
+    <string name="scan_serial">Serienummer: %1$s</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_bike_image_description">Veloretti Ivy 2 Pro Matte Black</string>
+    <string name="dashboard_bike_name_mock">Ivy 2 Pro</string>
+    <string name="dashboard_bike_name_default">Veloretti Ivy 2 Pro</string>
+    <string name="dashboard_connected">Verbonden</string>
+    <string name="dashboard_cadence_description">Gewenste trapsnelheid, getoond op het fietsdisplay.</string>
+    <string name="dashboard_motor_assist_description">0 = geen motor, 1–4 = oplopende ondersteuning, S = maximaal vermogen.</string>
+    <string name="dashboard_start_multiplier_description">Extra boost bij het optrekken vanuit stilstand.</string>
+    <string name="dashboard_start_multiplier_title">Startvermenigvuldiger</string>
+    <string name="dashboard_enviolo_mode_title">Naafmodus</string>
+
+    <string name="bike_display_title">Fietsdisplay</string>
+    <string name="display_mode_clock">Klok</string>
+    <string name="display_mode_clock_split">Klok (groot)</string>
+    <string name="display_mode_heart_rate">Hartslag</string>
+    <string name="display_mode_clock_hr">Klok + hartslag</string>
+    <string name="display_mode_weather">Weer</string>
+
+    <!-- Enviolo naafmodi -->
+    <string name="enviolo_mode_economy">Eco</string>
+    <string name="enviolo_mode_comfort">Comfort</string>
+    <string name="enviolo_mode_sport">Sport</string>
+
+    <!-- Instellingen -->
+    <string name="settings_appearance_title">Weergave</string>
+    <string name="settings_theme_light">Licht</string>
+    <string name="settings_theme_dark">Donker</string>
+    <string name="settings_accent_coral">Coral</string>
+    <string name="settings_accent_sage">Sage</string>
+    <string name="settings_accent_ruby">Ruby</string>
+    <string name="settings_accent_dune">Dune</string>
+    <string name="settings_clear_ride_history">Rithistorie wissen</string>
+    <string name="settings_clear_history_confirm_title">Rithistorie wissen?</string>
+    <string name="settings_clear_history_confirm_text">Dit verwijdert permanent alle lokaal opgeslagen ritten. Dit kan niet ongedaan worden gemaakt.</string>
+    <string name="settings_clear_history_confirm_button">Wissen</string>
+
+
+    <!-- Informatie -->
+    <string name="info_health_connect_activate">Google Health-synchronisatie activeren</string>
+    <string name="info_health_connect_active">Google Health-synchronisatie actief</string>
+    <string name="info_drive_sync_activate">Instellingen/rithistorie synchroniseren naar Google Drive</string>
+    <string name="info_drive_sync_toggle">Google Drive-synchronisatie actief</string>
+    <string name="info_drive_sync_revoke_hint">Dit uitzetten stopt alleen nieuwe backups — verwijder de app bij verbonden apps in je Google-account om de toegang volledig in te trekken.</string>
+    <string name="info_autostart_title">Automatisch starten</string>
+    <string name="info_autostart_bike_detected">App openen zodra je fiets in bereik komt</string>
+    <string name="info_autostart_watch_pedal">Horloge-app openen zodra je begint te trappen</string>
+    <string name="info_language_title">Taal</string>
+    <string name="info_language_system">Automatisch</string>
+    <string name="info_connected">Verbonden: %1$s</string>
+    <string name="info_heart_rate">Hartslag (horloge)</string>
+    <string name="info_battery">Accu</string>
+    <string name="info_battery_health">Accugezondheid</string>
+    <string name="info_charging">Opladen</string>
+    <string name="info_speed">Snelheid</string>
+    <string name="info_max_speed_session">Max. snelheid (sessie)</string>
+    <string name="info_odometer">Kilometerstand</string>
+    <string name="info_cadence">Cadans</string>
+    <string name="info_display_serial">Serienummer display</string>
+    <string name="info_display_hardware">Hardwareversie display</string>
+    <string name="info_display_firmware">Firmwareversie display</string>
+    <string name="info_experience_module_firmware">Firmwareversie experience-module</string>
+    <string name="info_section_live">Live</string>
+    <string name="info_section_display">Display</string>
+    <string name="info_enviolo_title">Enviolo-naaf</string>
+    <string name="info_enviolo_serial">Serienummer</string>
+    <string name="info_enviolo_article">Artikelnummer</string>
+    <string name="info_enviolo_start_multiplier">Startvermenigvuldiger</string>
+    <string name="info_enviolo_mode">Modus</string>
+    <string name="info_enviolo_operation_mode">Bedrijfsmodus</string>
+    <string name="info_enviolo_cadence_range">Cadansbereik</string>
+    <string name="info_enviolo_odometer">Naaf-kilometerstand</string>
+    <string name="update_version">Versie %1$s beschikbaar</string>
+    <string name="update_download">Downloaden &amp; installeren</string>
+    <string name="update_downloading">Downloaden… %1$d%%</string>
+    <string name="update_skip">Deze versie overslaan</string>
+    <string name="update_disable">Niet meer controleren</string>
+    <string name="update_error">Download mislukt — probeer opnieuw</string>
+    <string name="info_version">Versie %1$s</string>
+    <string name="info_disconnect">Verbinding verbreken</string>
+
+    <!-- Fietsfoto-picker -->
+    <string name="photo_picker_choose_model">Kies je fietsmodel</string>
+    <string name="photo_picker_choose_color">Tik op een kleur om foto\'s te zoeken</string>
+    <string name="photo_picker_search">Zoeken</string>
+    <string name="photo_picker_from_gallery">Foto kiezen uit galerij</string>
+    <string name="photo_crop_cancel">Annuleren</string>
+    <string name="photo_crop_save">Opslaan</string>
+    <string name="photo_picker_tap_to_change">Tik om fietsfoto in te stellen</string>
+
+    <!-- Rithistorie -->
+    <string name="trip_memory_empty">Nog geen ritten — begin met trappen en er verschijnt hier een.</string>
+    <string name="trip_memory_distance">Afstand</string>
+    <string name="trip_memory_duration">Duur</string>
+    <string name="trip_memory_avg_speed">Gem. snelheid</string>
+    <string name="trip_memory_max_speed">Max. snelheid</string>
+    <string name="trip_memory_avg_heart_rate">Gem. hartslag</string>
+    <string name="trip_memory_max_heart_rate">Max. hartslag</string>
+    <string name="trip_memory_elevation_gain">Stijging</string>
+    <string name="trip_memory_battery">Accu</string>
+    <string name="trip_memory_avg_cadence">Gem. cadans</string>
+    <string name="trip_memory_max_cadence">Max. cadans</string>
+    <string name="trip_memory_merge_rides">Ritten samenvoegen</string>
+    <string name="trip_memory_select_to_merge">Selecteer ritten om samen te voegen</string>
+    <string name="trip_memory_merge_confirm_title">%1$d ritten samenvoegen?</string>
+    <string name="trip_memory_merge_confirm_text">Dit combineert de geselecteerde ritten tot één rit. Dit kan niet ongedaan worden gemaakt.</string>
+    <string name="trip_memory_delete_ride">Rit verwijderen</string>
+    <string name="trip_memory_delete_confirm_title">Deze rit verwijderen?</string>
+    <string name="trip_memory_delete_confirm_text">Dit verwijdert deze rit permanent. Dit kan niet ongedaan worden gemaakt.</string>
+    <string name="settings_nav_bridge_title">Navigatiebrug</string>
+    <string name="settings_nav_bridge_description">Stuurt afslaginstructies van Google Maps, Komoot, Waze, OsmAnd, Ride with GPS, Bikemap of Mapy.cz door naar het fietsdisplay. Vereist meldingstoegang.</string>
+    <string name="settings_nav_bridge_grant_access">Meldingstoegang geven</string>
+    <string name="settings_nav_bridge_active">Navigatiebrug</string>
+    <string name="nav_card_active">Navigatie actief</string>
+    <string name="trip_memory_groups">Groepen</string>
+    <string name="trip_memory_create_group">Groep aanmaken</string>
+    <string name="trip_memory_group_name_hint">Groepsnaam</string>
+    <string name="trip_memory_add_to_group">Toevoegen aan groep</string>
+    <string name="trip_memory_remove_from_group">Uit groep verwijderen</string>
+    <string name="trip_memory_delete_group">Groep verwijderen</string>
+    <string name="trip_memory_rename_group">Groep hernoemen</string>
+    <string name="trip_memory_delete_group_confirm_title">Deze groep verwijderen?</string>
+    <string name="trip_memory_delete_group_confirm_text">De ritten in deze groep worden bewaard, alleen de groepering wordt verwijderd.</string>
+    <string name="trip_memory_view_in_health">Bekijk in Health Connect</string>
+    <string name="trip_memory_ungrouped">Losse ritten</string>
+    <string name="trip_memory_all_rides">Alle ritten</string>
+    <string name="trip_memory_export_gpx">Exporteer GPX</string>
+    <string name="widget_description">Accu en snelheid in een oogopslag</string>
+    <string name="widget_tap_to_open">Tik om te openen</string>
+    <string name="widget_no_bike">Geen fiets verbonden</string>
+    <string name="stats_total_distance">Totale afstand</string>
+    <string name="stats_week">Week</string>
+    <string name="stats_month">Maand</string>
+    <string name="stats_year">Jaar</string>
+    <string name="stats_all">Alles</string>
+    <string name="notif_connection_channel">Fietsverbinding</string>
+    <string name="notif_scanning">Scannen naar fietsen…</string>
+    <string name="notif_connecting">Verbinden…</string>
+    <string name="notif_reconnecting">Opnieuw verbinden…</string>
+    <string name="notif_connected">Verbonden</string>
+    <string name="notif_riding">Onderweg · %1$s km</string>
+    <string name="notif_battery_low_title">Accu bijna leeg</string>
+    <string name="notif_battery_low_text">Accu op %1$d%%</string>
+    <string name="settings_speed_alert_title">Snelheidswaarschuwing</string>
+    <string name="settings_speed_alert_description">Trilsignaal wanneer je de ingestelde snelheid overschrijdt.</string>
+    <string name="settings_speed_alert_toggle">Snelheidswaarschuwing</string>
+    <string name="settings_battery_alert_title">Accuwaarschuwing</string>
+    <string name="settings_battery_alert_description">Melding wanneer de accu onder het ingestelde niveau zakt.</string>
+    <string name="settings_battery_alert_toggle">Accuwaarschuwing</string>
+    <string name="settings_service_reminder_title">Serviceherinnering</string>
+    <string name="settings_service_reminder_description">Ontvang een herinnering op basis van je kilometerstand.</string>
+    <string name="settings_service_reminder_next">Volgende beurt over %1$d km</string>
+    <string name="battery_efficiency_title">Accu-efficiëntie</string>
+    <string name="battery_efficiency_unit">%/km</string>
+    <string name="battery_efficiency_avg">Gem. %.1f%%/km</string>
+    <string name="battery_efficiency_recent">Recent %.1f%%/km</string>
+    <string name="battery_efficiency_hint">Lager is beter</string>
+    <string name="battery_efficiency_source">Gebaseerd op accumetingen van de fiets</string>
+    <string name="settings_service_reminder_reset">Service gehad</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welkom bij\nVeloGappie</string>
+    <string name="onboarding_welcome_body">Je companion voor de Veloretti e-bike. Bestuur trapondersteuning, verlichting en je display — recht vanaf je telefoon.</string>
+    <string name="onboarding_connect_title">Verbind via\nBluetooth</string>
+    <string name="onboarding_connect_body">VeloGappie heeft Bluetooth en locatie nodig om je fiets te vinden en te besturen. We delen niets met derden.</string>
+    <string name="onboarding_connect_check_1">Verbinden met de fiets</string>
+    <string name="onboarding_connect_check_2">Ritten opnemen met GPS</string>
+    <string name="onboarding_scan_title">Zoek je\nfiets</string>
+    <string name="onboarding_scan_body">Zet je fiets aan, dan vinden we hem via Bluetooth.</string>
+    <string name="onboarding_scan_connected">Verbonden!</string>
+    <string name="onboarding_customize_title">Maak het\nvan jou</string>
+    <string name="onboarding_customize_body">Stel optionele functies in, of sla over en pas later aan in Instellingen.</string>
+    <string name="onboarding_feature_autostart">Openen zodra fiets in bereik komt</string>
+    <string name="onboarding_feature_nav">Navigatiebrug</string>
+    <string name="onboarding_feature_battery">Accuwaarschuwing</string>
+    <string name="onboarding_feature_health">Google Health synchronisatie</string>
+    <string name="onboarding_feature_drive">Google Drive backup</string>
+    <string name="onboarding_btn_start">Aan de slag</string>
+    <string name="onboarding_btn_grant">Toegang geven</string>
+    <string name="onboarding_btn_skip">Overslaan</string>
+    <string name="onboarding_btn_finish">Klaar — rijden maar</string>
+    <string name="onboarding_next">Volgende</string>
+
+    <!-- Error feedback -->
+    <string name="error_drive_sync">Google Drive synchronisatie mislukt — probeer later opnieuw</string>
+    <string name="error_weather">Weergegevens konden niet worden opgehaald</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_assist_level">Ondersteuningsniveau %1$s</string>
+    <string name="a11y_close">Sluiten</string>
+    <string name="a11y_merge">Samenvoegen</string>
+    <string name="a11y_more_options">Meer opties</string>
+    <string name="a11y_delete">Verwijderen</string>
+    <string name="a11y_share">Delen</string>
+    <string name="a11y_add">Toevoegen</string>
+    <string name="a11y_folder">Map</string>
+    <string name="a11y_back">Terug</string>
+    <string name="a11y_gallery">Galerij</string>
+</resources>

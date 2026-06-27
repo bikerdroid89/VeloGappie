@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bicycle silhouette, centered within the adaptive icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Rear wheel (ring) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M5.2,15 a2.8,2.8 0,1,1 5.6,0 a2.8,2.8 0,1,1 -5.6,0"/>
+
+    <!-- Front wheel (ring) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M13.2,15 a2.8,2.8 0,1,1 5.6,0 a2.8,2.8 0,1,1 -5.6,0"/>
+
+    <!-- Frame: chain stay, seat stay, seat tube, top tube, down tube, fork -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,15 L11.3,15 M8,15 L11.3,9 M11.3,15 L11.3,9 M11.3,9 L14.7,10 M11.3,15 L14.7,10 M14.7,10 L16,15"/>
+
+    <!-- Saddle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M9.8,8.6 L12.6,8.6"/>
+
+    <!-- Handlebar stem + bar -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:pathData="M14.7,10 L14.7,7.6 M12.7,7.6 L16.7,7.6"/>
+
+</vector>

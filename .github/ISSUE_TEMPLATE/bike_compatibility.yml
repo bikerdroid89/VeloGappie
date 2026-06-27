@@ -1,0 +1,36 @@
+name: Bike Compatibility Report
+description: Report whether VeloGappie works with your Veloretti bike
+labels: ["compatibility"]
+body:
+  - type: input
+    id: bike-model
+    attributes:
+      label: Bike model
+      description: Which Veloretti bike do you have?
+      placeholder: e.g. Ace 2, Ivy 2 Sport
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Does VeloGappie connect to your bike?
+      options:
+        - "Yes, everything works"
+        - "Connects but some features don't work"
+        - "Does not connect at all"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What works and what doesn't? Include the BLE device name if you can see it (e.g. V-12345).
+    validations:
+      required: false
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and Android version
+      placeholder: e.g. Samsung Galaxy S24, Android 14
+    validations:
+      required: false
